@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Binyan Hu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ <script defer src="js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Binyan Hu</h1>
+    <p>Information Systems Master @ Indiana University | AI & Cloud Technology Enthusiast</p>
+  </header>
+
+  <nav>
+    <a href="index.html">About</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="index.html#experience">Experience</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+
+  <!-- 🔍 Search bar + dropdown -->
+<div class="search-container">
+  <div class="search-wrapper">
+    <input type="text" id="searchBox" placeholder="Search by title or category..." autocomplete="off" />
+    <ul id="categoryDropdown" class="dropdown"></ul>
+  </div>
+</div>
+
+    <!-- 🧩 Project Cards -->
+    <div class="projects-grid" id="projectList">
+
+      <div class="project-card" data-category="AI,Full-Stack Development">
+        <img src="assets/people.jpeg" alt="Grainger" class="project-img">
+        <h3>AI-Powered Project Staffing App</h3>
+        <p>Built an AI-powered staffing platform using Python and Flask to optimize engineer resource allocation.</p>
+        <span class="category">AI</span>
+         <span class="category">Full-Stack Development</span>
+         <br>
+        <a href="seoulbike.html" class="project-link">View Project</a>
+      </div>
+
+ <div class="project-card" data-category="Data Analytics">
+        <img src="assets/bike.jpg" alt="Seoul Bike Analysis" class="project-img">
+        <h3>Seoul Bike Demand Analysis</h3>
+        <p>Explored how weather, humidity, and temperature affect Seoul’s bike rental demand using Python and VIF analysis.</p>
+        <span class="category">Data Analytics</span>
+        <br>
+        <a href="seoulbike.html" class="project-link">View Project</a>
+      </div>
+
+
+ <div class="project-card" data-category="Consulting, Cybersecurity, GRC">
+  <img src="assets/IAM.png" alt="X IAM Consulting Case" class="project-img">
+  <h3>Identity &amp; Access Management Consulting for X (Twitter)</h3>
+  <p>Designed a comprehensive IAM strategy to enhance X’s cybersecurity resilience following the 2020 Twitter hack. 
+     </p>
+  <div class="tags">
+    <span class="category">Consulting</span>
+    <span class="category">Cybersecurity</span>
+    <span class="category">GRC</span>
+  </div>
+  <a href="assets/GRCFinalCase_X_IAM.pdf" class="project-link" target="_blank">View Project</a>
+</div>
+
+<div class="project-card" data-category="Consulting, GRC, Business Continuity">
+  <img src="assets/BC.jpeg" alt="Cocoa-Sassafras BCM Case" class="project-img">
+  <h3>Business Continuity Management: Cocoa-Sassafras Corporation</h3>
+  <p>Proposed a hybrid-cloud business continuity plan for a multinational food and beverage firm after Hurricane Sandy, enhancing data resilience, disaster recovery, and supply chain stability across North America.</p>
+  <div class="tags">
+    <span class="category">Consulting</span>
+    <span class="category">Business Continuity</span>
+    <span class="category">GRC</span>
+  </div>
+   <a href="assets/GRCCase_BusinessContinuity.pdf" class="project-link" target="_blank">View Project</a>
+</div>
+
+<div class="project-card" data-category="Consulting, IT Strategy, Portfolio Management">
+  <img src="assets/vw.jpg" alt="Volkswagen of America IT Prioritization Case" class="project-img">
+  <h3>IT Portfolio Management: Volkswagen of America</h3>
+  <p>Evaluated and optimized VWoA’s project prioritization process to balance strategic alignment, operational efficiency, and budget constraints. Recommended retaining the PPM framework to strengthen governance, resource allocation, and cross-unit collaboration.</p>
+  <div class="tags">
+    <span class="category">Consulting</span>
+    <span class="category">IT Strategy</span>
+    <span class="category">Portfolio Management</span>
+  </div>
+        <a href="assets/VW.pdf" class="project-link" target="_blank">View Project</a>
+</div>
+
+<div class="project-card" data-category="Consulting, IT Strategy, Change Management">
+  <img src="assets/ITM.png" alt="Leisure Destinations International IT Strategy Case" class="project-img">
+  <h3>IT Transformation Strategy: Leisure Destinations International</h3>
+  <p>Developed a comprehensive IT strategy for LDI to enhance scalability and operational efficiency. Recommended a hybrid-cloud model, centralized ITSM framework, and vendor management office to improve service quality, governance, and business alignment.</p>
+  <div class="tags">
+    <span class="category">Consulting</span>
+    <span class="category">IT Strategy</span>
+  </div>
+        <a href="assets/ITM.pdf" class="project-link" target="_blank">View Project</a>
+
+</div>
+
+<div class="project-card" data-category="Data Analytics, Supply Chain, Simulation">
+  <img src="assets/ERP.png" alt="ERPsim Muesli Strategy" class="project-img">
+  <h3>ERPsim Supply Chain Simulation: Muesli Strategy</h3>
+  <p>Led a data-driven simulation optimizing production, pricing, and logistics for a Muesli manufacturer. Applied Tableau analytics to improve forecasting, reduce inventory overflow, and achieve over €5.5M in revenue with 60% sales growth between rounds.</p>
+  <div class="tags">
+    <span class="category">Data Analytics</span>
+    <span class="category">Supply Chain</span>
+    <span class="category">ERP SAP</span>
+  </div>
+  <div class="project-links">
+    <a href="https://github.com/binyhu/ERPsim-Muesli-Strategy" class="project-link" target="_blank">
+      <i class="fab fa-github"></i> View Project
+    </a>
+  </div>
+</div>
+
+
+
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/binyan-hu" target="_blank">LinkedIn</a>
+    <a href="https://github.com/binyhu" target="_blank">GitHub</a>
+    <a href="mailto:binyhu@outlook.com">Email</a>
+    <p>© 2025 Binyan Hu. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

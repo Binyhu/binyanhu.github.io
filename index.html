@@ -4,92 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Binyan Hu | Portfolio</title>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', sans-serif; background-color: #f7f9fa; color: #222; }
-    header { background: linear-gradient(90deg, #4fd1a1, #38b2ac); color: white; padding: 60px 20px; text-align: center; }
-    header h1 { font-size: 2.8rem; margin-bottom: 10px; }
-    header p { font-size: 1.1rem; opacity: 0.9; }
-    nav { background: white; padding: 10px; display: flex; justify-content: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-    nav a { color: #38b2ac; text-decoration: none; margin: 0 15px; font-weight: 600; transition: color 0.3s; }
-    nav a:hover { color: #2f855a; }
-    section { padding: 60px 20px; max-width: 900px; margin: auto; }
-    h2 { text-align: center; color: #2f855a; margin-bottom: 30px; }
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-    .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.3s; }
-    .card:hover { transform: translateY(-5px); }
-    .timeline { border-left: 3px solid #38b2ac; padding-left: 20px; }
-    .timeline div { margin-bottom: 20px; }
-    footer { background: #edf2f7; text-align: center; padding: 30px 10px; }
-    footer a { margin: 0 10px; color: #38b2ac; text-decoration: none; font-weight: 600; }
-    footer a:hover { color: #2f855a; }
-    .resume-btn { display: inline-block; margin-top: 20px; background: #38b2ac; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; transition: 0.3s; }
-    .resume-btn:hover { background: #2f855a; }
-  </style>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
   <header>
     <h1>Binyan Hu</h1>
     <p>Information Systems Master @ Indiana University | AI & Cloud Technology Enthusiast</p>
-    <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a>
+    <!-- <a href="resume.pdf" class="resume-btn" target="_blank">Download Resume</a> -->
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
+    <a href="index.html">About</a>
+    <a href="projects.html">Projects</a>
     <a href="#experience">Experience</a>
-    <a href="#contact">Contact</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
-<section id="about">
-  <h2>About Me</h2>
-  <div style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <section id="about">
+    <h2>Hey, nice meeting you!</h2>
+    <div class="about-container">
+      <img src="assets/Me.jpg" alt="Binyan Hu" class="profile-pic">
 
-    <img src="Me.jpg" alt="Binyan Hu" 
-         style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; 
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2); border: 3px solid #a7f3d0;">
-
-    <div style="background: #ffffff; padding: 20px 25px; border-radius: 20px; 
-                box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
-                max-width: 600px; line-height: 1.6; position: relative;">
-
-      <p style="margin: 0;">
-        Hello! I’m <strong>Binyan</strong>, a passionate Information Systems student at 
-        <strong>Indiana University</strong> focusing on <strong>AI, Cloud Technology</strong>, 
-        and business-driven innovation. I love bridging the gap between technology and strategy 
-        to create impactful digital solutions.
-      </p>
-
-      <!-- Bubble tail -->
-      <span style="content: ''; position: absolute; left: -12px; top: 40%; 
-                   width: 0; height: 0; border-top: 12px solid transparent; 
-                   border-bottom: 12px solid transparent; 
-                   border-right: 12px solid #ffffff; 
-                   filter: drop-shadow(-1px 2px 2px rgba(0,0,0,0.05));"></span>
-    </div>
-  </div>
-</section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Grainger Capstone</h3>
-        <p>Developed an AI-powered resource allocation system using Power Apps and Python Flask to optimize engineer staffing.</p>
-      </div>
-      <div class="card">
-        <h3>ServeIT Nonprofit Projects</h3>
-        <p>Supervised student teams building digital tools for Indiana nonprofits, improving workflow and communication efficiency.</p>
-      </div>
-      <div class="card">
-        <h3>SAP S/4HANA Integration</h3>
-        <p>Configured global enterprise systems focusing on production, procurement, and finance processes in hybrid cloud environments.</p>
+      <div class="about-box">
+        <p>
+          Hello! I’m <strong>Binyan</strong>, a passionate Information Systems student at 
+          Indiana University focusing on AI, Cloud Technology, 
+          and business-driven innovation. I love bridging the gap between technology and strategy 
+          to create impactful digital solutions.
+        </p>
+        <span class="speech-tail"></span>
       </div>
     </div>
   </section>
 
-  <section id="experience">
+ <section id="experience">
     <h2>Experience & Education</h2>
     <div class="timeline">
      <div>
@@ -114,16 +70,14 @@
       </div>
     </div>
   </section>
+ 
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p style="text-align:center;">Let’s connect! Feel free to reach out through any of the links below.</p>
-    <footer>
-      <a href="https://www.linkedin.com/in/binyan-hu" target="_blank">LinkedIn</a>
-      <a href="https://github.com/binyhu" target="_blank">GitHub</a>
-      <a href="mailto:binyhu@outlook.com>Email</a>
-      <p style="margin-top:10px; font-size:0.9rem; color:#555;">© 2025 Binyan Hu. All Rights Reserved.</p>
-    </footer>
-  </section>
+  <footer>
+    <a href="https://www.linkedin.com/in/binyan-hu" target="_blank">LinkedIn</a>
+    <a href="https://github.com/binyhu" target="_blank">GitHub</a>
+    <a href="mailto:binyhu@outlook.com">Email</a>
+    <p>© 2025 Binyan Hu. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
